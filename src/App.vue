@@ -15,6 +15,9 @@
             <router-link class="nav-link" to="/transaksi">Transaksi</router-link>
           </li>
           <li class="nav-item">
+            <router-link class="nav-link" to="/histori_petugas">Histori</router-link>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#" v-on:click="logout()">Logout</a>
           </li>
           

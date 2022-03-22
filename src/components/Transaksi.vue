@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="container">
 		<h1>Transaksi Pembayaran SPP</h1>
 		<input type="text" v-model="nisn" class="form-control">
 		<button class="btn btn-success" v-on:click="cari()">Cari</button>
@@ -61,6 +61,7 @@
 		},
 		methods:{
 			cari:function(){
+				this.statusgetsiswa=false
 				if(this.nisn!=''){
 					var option = {
 						headers:{Authorization: "bearer "+localStorage.getItem('token')}

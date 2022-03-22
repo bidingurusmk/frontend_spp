@@ -29,7 +29,7 @@
 				var option = {
 						headers:{Authorization: "bearer "+localStorage.getItem('token')}
 					};
-				this.axios.get("http://localhost:81/spp_app/public/api/gethistori_admin",option).then((result)=>{
+				this.axios.get("http://localhost:81/spp_app/public/api/gethistori_petugas",option).then((result)=>{
 					console.log(result)
 					this.datahistori=result.data
 				});
